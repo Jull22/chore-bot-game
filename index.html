@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chore Door!</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+    <script type='text/javascript' src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="https://content.codecademy.com/projects/chore-door/images/logo.svg" alt="logo">
+    </header>
+    <h1 class="instructions-title">&#9733; Instructions &#9733;</h1>
+    <ol>
+      <li><span>Hiding behind one of these doors is the ChoreBot.</span></li>
+      <li><span>Your mission is to open all of the doors without running into the ChoreBot</span>.</li>
+      <li><span>If you manage to avoid the ChoreBot until the very last door, you win!</span></li>
+      <li><span>See if you can score a winning streak!</span>
+</li>
+
+    </ol>
+    
+    <div class='door-row'>
+      <img id='door1' class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" alt="door1">  
+      <img id='door2' class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" alt="door2">  
+      <img id='door3' class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" alt="door3">  
+    </div>
+    <button class="start-button"> Good luck! </button>
+    <div class="scores">
+      <div class="current-streak">
+        <p>Current streak:</p>
+        <div class="current-streak-score">0 </div>
+      </div>
+      <div class= "best-streak"> 
+        <p>Best streak:</p>
+        <div class="best-streak-score">0 </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
