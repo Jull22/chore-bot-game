@@ -27,10 +27,10 @@ let numClosedDoors = 3
 playDoor = (door) => {
   numClosedDoors --;
   console.log(door.src);
-  if (numClosedDoors === 0 & door.src === botDoorPath ) {
+  if (numClosedDoors === 0 && door.src === botDoorPath ) {
     return gameOver("win");
   }
-  else if (numClosedDoors > 0 & door.src === botDoorPath)
+  else if (numClosedDoors > 0 && door.src === botDoorPath)
     
     return gameOver();
 
@@ -95,20 +95,20 @@ randomChoreDoorGenerator = () => {
 
 
 doorImage1.onclick = () => {
-  if (!isClicked(doorImage1) & currentlyPlaying){
+  if (!isClicked(doorImage1) && currentlyPlaying){
     doorImage1.src=openDoor1;
     playDoor(doorImage1);
   }
 
   };
 doorImage2.onclick = () => {
-  if (!isClicked(doorImage2) & currentlyPlaying){
+  if (!isClicked(doorImage2) && currentlyPlaying){
     doorImage2.src=openDoor2;
     playDoor(doorImage2)
     };
 }
 doorImage3.onclick = () => {
-  if (!isClicked(doorImage3) & currentlyPlaying){
+  if (!isClicked(doorImage3) && currentlyPlaying){
     doorImage3.src=openDoor3;
     playDoor(doorImage3)
   };
